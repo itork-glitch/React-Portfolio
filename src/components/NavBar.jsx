@@ -31,13 +31,13 @@ export const NavBar = () => {
 
       <div className="" id="main-nav">
         <ul className=" inline-flex gap-[45px]">
-          <li>
+          <li className="transition duration-150 ease-out hover:text-cyan-600">
             <a href="">Strona Główna</a>
           </li>
-          <li>
+          <li className="transition duration-150 ease-out hover:text-cyan-600">
             <a href="">Projekty</a>
           </li>
-          <li>
+          <li className="transition duration-150 ease-out hover:text-cyan-600">
             <a href="">Umiejętności</a>
           </li>
         </ul>
@@ -45,24 +45,26 @@ export const NavBar = () => {
 
       <div className="z-[5]" id="small-nav">
         <li className=" list-none" onClick={() => setIsOpen(!isOpen)}>
-          <div className="Menu">
-            <button className="MenuButton">Menu</button>
-            <FontAwesomeIcon
-              icon="fa-solid fa-angle-down"
-              className=" ml-[7px]"
-            />
+          <div className="Menu ">
+            <div className="transition duration-150 ease-out hover:text-cyan-600">
+              <button className="MenuButton ">Menu</button>
+              <FontAwesomeIcon
+                icon="fa-solid fa-angle-down"
+                className=" ml-[7px] "
+              />
+            </div>
 
             {isOpen && (
               <div className={styles.dropdown} ref={dropdownRef} id="drop">
                 <ul>
-                  <li className=" ">
+                  <li className="">
                     <a href="">Strona Główna</a>
                   </li>
                   <li>
                     <a href="">Projekty</a>
                   </li>
                   <li>
-                    <a href="">Umiejętności</a>
+                    <a href=" ">Umiejętności</a>
                   </li>
                 </ul>
               </div>
