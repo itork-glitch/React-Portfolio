@@ -74,7 +74,7 @@ export const NavBar = () => {
       <div className="">
         <ul className=" inline-flex gap-[7px] sm:gap-[20px]">
           <li>
-            <a href="">
+            <a href="https://www.instagram.com/_itork_/" target="_blank">
               <FontAwesomeIcon
                 icon="fa-brands fa-instagram"
                 className=" text-[15px] sm:text-[30px]"
@@ -82,7 +82,7 @@ export const NavBar = () => {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="https://github.com/itork-glitch" target="_blank">
               <FontAwesomeIcon
                 icon="fa-brands fa-github"
                 className=" text-[15px] sm:text-[30px]"
@@ -90,7 +90,7 @@ export const NavBar = () => {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="https://discord.gg/4nqtVmu4NP" target="_blank">
               <FontAwesomeIcon
                 icon="fa-brands fa-discord"
                 className=" text-[15px] sm:text-[30px]"
