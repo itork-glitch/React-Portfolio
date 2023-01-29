@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/styles";
-import { Link, Route } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import { Projects } from "./projects";
 
 export const NavBar = () => {
@@ -62,7 +62,9 @@ export const NavBar = () => {
                     <a href="">Strona Główna</a>
                   </li>
                   <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
-                    <a href="#projects">Projekty</a>
+                    <a href="#projects" id="projects">
+                      Projekty
+                    </a>
                   </li>
                   <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
                     <a href="#">Umiejętosci</a>
