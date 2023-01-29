@@ -19,9 +19,9 @@
 }
 
 .glass {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(4.6px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
 }
 
 #small-nav {
@@ -39,7 +39,27 @@
 }
 
 #drop {
-  -webkit-box-shadow: 0px 0px 32px -3px rgba(66, 68, 90, 1);
-  -moz-box-shadow: 0px 0px 32px -3px rgba(66, 68, 90, 1);
-  box-shadow: 0px 0px 32px -3px rgba(66, 68, 90, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+}
+
+.hero-h1 {
+  background-image: url("./assets/pexels-felix-mittermeier-956999.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  font-weight: 900;
+  font-size: 150px !important;
+  background-attachment: fixed !important;
+  filter: brightness(1.1);
+  top: 50vh;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }

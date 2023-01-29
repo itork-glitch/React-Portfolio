@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/styles";
-import Switch from "react-switch";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +19,7 @@ export const NavBar = () => {
   }, [dropdownRef]);
 
   return (
-    <div className={styles.navBar} id="navbar">
+    <div className={styles.navBar} ref={dropdownRef} id="navbar">
       <div className="text-center inline-flex sm:flex">
         <div className="sm:block md:inline-block lg:inline-block">
           <span className="md:font-semibold font-medium">Itork</span>
@@ -31,13 +30,13 @@ export const NavBar = () => {
 
       <div className="" id="main-nav">
         <ul className=" inline-flex gap-[45px]">
-          <li className="transition duration-150 ease-out hover:text-cyan-600">
+          <li className="transition duration-300 ease-out hover:text-cyan-600">
             <a href="">Strona Główna</a>
           </li>
-          <li className="transition duration-150 ease-out hover:text-cyan-600">
+          <li className="transition duration-300 ease-out hover:text-cyan-600">
             <a href="">Projekty</a>
           </li>
-          <li className="transition duration-150 ease-out hover:text-cyan-600">
+          <li className="transition duration-300 ease-out hover:text-cyan-600">
             <a href="">Umiejętności</a>
           </li>
         </ul>
@@ -46,7 +45,7 @@ export const NavBar = () => {
       <div className="z-[5]" id="small-nav">
         <li className=" list-none" onClick={() => setIsOpen(!isOpen)}>
           <div className="Menu ">
-            <div className="transition duration-150 ease-out hover:text-cyan-600">
+            <div className="transition duration-300 ease-out hover:text-cyan-600">
               <button className="MenuButton ">Menu</button>
               <FontAwesomeIcon
                 icon="fa-solid fa-angle-down"
@@ -55,15 +54,15 @@ export const NavBar = () => {
             </div>
 
             {isOpen && (
-              <div className={styles.dropdown} ref={dropdownRef} id="drop">
-                <ul>
-                  <li className="">
+              <div className={styles.dropdown} id="drop">
+                <ul className="divide-y-[1.5px] divide-black">
+                  <li className=" my-[4px] ease-in-out duration-300 hover:text-cyan-600">
                     <a href="">Strona Główna</a>
                   </li>
-                  <li>
+                  <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
                     <a href="">Projekty</a>
                   </li>
-                  <li>
+                  <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
                     <a href=" ">Umiejętności</a>
                   </li>
                 </ul>
