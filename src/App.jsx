@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 import "./App.css";
-import { NavBar } from "./components/index";
+import { NavBar, Projects } from "./components/index";
 import "./styles/darkmode.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Switch from "react-switch";
@@ -28,6 +28,7 @@ function App() {
           <Switch onChange={toogleTheme} checked={theme === "dark"} />
         </div>
       </div>
+      <Projects />
     </themeContext.Provider>
   );
 }

@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/styles";
+import { Link } from "react-router-dom";
+import { Projects } from "./projects";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,13 +33,13 @@ export const NavBar = () => {
       <div className="" id="main-nav">
         <ul className=" inline-flex gap-[45px]">
           <li className="transition duration-300 ease-out hover:text-cyan-600">
-            <a href="">Strona Główna</a>
+            <Link to="#">Strona Główna</Link>
           </li>
           <li className="transition duration-300 ease-out hover:text-cyan-600">
-            <a href="">Projekty</a>
+            <Link to="#projects">Projekty</Link>
           </li>
           <li className="transition duration-300 ease-out hover:text-cyan-600">
-            <a href="">Umiejętności</a>
+            <Link to="#"></Link>
           </li>
         </ul>
       </div>
@@ -57,13 +59,13 @@ export const NavBar = () => {
               <div className={styles.dropdown} id="drop">
                 <ul className="divide-y-[1.5px] divide-black">
                   <li className=" my-[4px] ease-in-out duration-300 hover:text-cyan-600">
-                    <a href="">Strona Główna</a>
+                    <Link to="">Strona Główna</Link>
                   </li>
                   <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
-                    <a href="">Projekty</a>
+                    <Link to="#Projects">Projekty</Link>
                   </li>
                   <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
-                    <a href=" ">Umiejętności</a>
+                    <Link to="#">Umiejętosci</Link>
                   </li>
                 </ul>
               </div>
