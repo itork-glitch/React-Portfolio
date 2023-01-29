@@ -5,7 +5,6 @@ import "./styles/darkmode.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Switch from "react-switch";
 import styles from "./styles/styles";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export const themeContext = createContext(null);
 
