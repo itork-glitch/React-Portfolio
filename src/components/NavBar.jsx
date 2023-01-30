@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/styles";
-import { scroller } from "react-scroll";
-import { Projects } from "./projects";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +25,20 @@ export const NavBar = () => {
     });
   };
 
+  const scrollToHome = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToSkills = () => {
+    window.scrollTo({
+      top: 2160,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className={styles.navBar} ref={dropdownRef} id="navbar">
       <div className="text-center inline-flex sm:flex">
@@ -44,7 +56,9 @@ export const NavBar = () => {
       <div className="" id="main-nav">
         <ul className=" inline-flex gap-[45px]">
           <li className="transition duration-300 ease-out hover:text-cyan-600">
-            <a href="#">Strona Główna</a>
+            <span onClick={scrollToHome} className="cursor-pointer">
+              Strona Główna
+            </span>
           </li>
           <li className="mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
             <span onClick={scrollToProjects} className="cursor-pointer">
@@ -52,7 +66,9 @@ export const NavBar = () => {
             </span>
           </li>
           <li className="transition duration-300 ease-out hover:text-cyan-600">
-            <a href="#">Umiejętości</a>
+            <span onClick={scrollToSkills} className="cursor-pointer">
+              Umiejętości
+            </span>
           </li>
         </ul>
       </div>
@@ -72,7 +88,9 @@ export const NavBar = () => {
               <div className={styles.dropdown} id="drop">
                 <ul className="divide-y-[1.5px] divide-black">
                   <li className=" my-[4px] ease-in-out duration-300 hover:text-cyan-600">
-                    <a href="">Strona Główna</a>
+                    <span onClick={scrollToHome} className="cursor-pointer">
+                      Strona Główna
+                    </span>
                   </li>
                   <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
                     <span onClick={scrollToProjects} className="cursor-pointer">
@@ -80,7 +98,9 @@ export const NavBar = () => {
                     </span>
                   </li>
                   <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
-                    <a href="#">Umiejętosci</a>
+                    <span onClick={scrollToSkills} className="cursor-pointer">
+                      Umiejętosci
+                    </span>
                   </li>
                 </ul>
               </div>

@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 import "./App.css";
-import { NavBar, Projects } from "./components/index";
+import { NavBar, Projects, Skills } from "./components/index";
 import "./styles/darkmode.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Switch from "react-switch";
@@ -29,6 +29,7 @@ function App() {
         </div>
       </div>
       <Projects id={theme} />
+      <Skills />
     </themeContext.Provider>
   );
 }
