@@ -43,13 +43,13 @@ export const NavBar = () => {
     <div className={styles.navBar} ref={dropdownRef} id="navbar">
       <div className="text-center inline-flex sm:flex">
         <div className="sm:block md:inline-block lg:inline-block">
-          <a href="">
+          <span onClick={scrollToHome} className="cursor-pointer">
             <span className="md:font-semibold font-medium">Itork</span>
             <br className=" block sm:hidden" />
             <span className="md:font-normal font-light ml-[4px]">
               Portfolio
             </span>
-          </a>
+          </span>
         </div>
       </div>
 
