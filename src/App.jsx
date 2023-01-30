@@ -28,7 +28,7 @@ function App() {
           <Switch onChange={toogleTheme} checked={theme === "dark"} />
         </div>
       </div>
-      {/** Odwołanie do elementu "Projekty" w pliku Navbar **/} <Projects />
+      <Projects id={theme} />
     </themeContext.Provider>
   );
 }

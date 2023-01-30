@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/styles";
-import { Link, Route, Routes } from "react-router-dom";
+import { scroller } from "react-scroll";
 import { Projects } from "./projects";
 
 export const NavBar = () => {
@@ -20,13 +20,24 @@ export const NavBar = () => {
     };
   }, [dropdownRef]);
 
+  const scrollToProjects = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className={styles.navBar} ref={dropdownRef} id="navbar">
       <div className="text-center inline-flex sm:flex">
         <div className="sm:block md:inline-block lg:inline-block">
-          <span className="md:font-semibold font-medium">Itork</span>
-          <br className=" block sm:hidden" />
-          <span className="md:font-normal font-light ml-[4px]">Portfolio</span>
+          <a href="">
+            <span className="md:font-semibold font-medium">Itork</span>
+            <br className=" block sm:hidden" />
+            <span className="md:font-normal font-light ml-[4px]">
+              Portfolio
+            </span>
+          </a>
         </div>
       </div>
 
@@ -35,8 +46,10 @@ export const NavBar = () => {
           <li className="transition duration-300 ease-out hover:text-cyan-600">
             <a href="#">Strona Główna</a>
           </li>
-          <li className="transition duration-300 ease-out hover:text-cyan-600">
-            <a href="#projects">Projekty</a>
+          <li className="mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
+            <span onClick={scrollToProjects} className="cursor-pointer">
+              Projekty
+            </span>
           </li>
           <li className="transition duration-300 ease-out hover:text-cyan-600">
             <a href="#">Umiejętości</a>
@@ -62,9 +75,9 @@ export const NavBar = () => {
                     <a href="">Strona Główna</a>
                   </li>
                   <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
-                    <a href="#projects" id="projects">
+                    <span onClick={scrollToProjects} className="cursor-pointer">
                       Projekty
-                    </a>
+                    </span>
                   </li>
                   <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
                     <a href="#">Umiejętosci</a>
