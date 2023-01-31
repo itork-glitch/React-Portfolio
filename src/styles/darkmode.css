@@ -2,6 +2,14 @@
   color: white !important;
 }
 
-#dark {
-  background-image: url("../assets/darkmode.jpg");
+@media (min-width: 992px) {
+  #dark {
+    background-image: url("../assets/darkmode.jpg");
+  }
+}
+
+@media (max-width: 991px) {
+  #dark {
+    background-image: url("../assets/bg-phone-darkmode.png");
+  }
 }

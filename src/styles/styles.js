@@ -6,7 +6,7 @@ const styles = {
     "flex flex-col w-[100px] h-[150px] justify-center items-center bg-white/[.19] rounded-2xl fixed float-right right-[15px] top-[75%] md:top-[35%] p-[5px]",
 
   dropdown:
-    "dropdown-sm absolute mt-[40px] p-[15px] glass rounded-2xl bg-white/[0.19] z-[1] left-[30vw] flex items-center",
+    "dropdown-sm absolute mt-[40px] p-[15px] rounded-2xl bg-white/[0.19] z-[1] left-[30vw] flex items-center glass",
 };
 
 export default styles;

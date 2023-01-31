@@ -92,7 +92,7 @@ export const NavBar = () => {
               <button className="MenuButton ">Menu</button>
               <FontAwesomeIcon
                 icon="fa-solid fa-angle-down"
-                className=" ml-[7px] "
+                className=" ml-[7px] arrow "
               />
             </div>
 
@@ -100,17 +100,23 @@ export const NavBar = () => {
               <div className={styles.dropdown} id="drop">
                 <ul className="divide-y-[1.5px] divide-black">
                   <li className=" my-[4px] ease-in-out duration-300 hover:text-cyan-600">
-                    <span onClick={scrollToHome} className="cursor-pointer">
+                    <span
+                      onClick={scrollToHome}
+                      className="cursor-pointer mobile-link">
                       Strona Główna
                     </span>
                   </li>
                   <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
-                    <span onClick={scrollToProjects} className="cursor-pointer">
+                    <span
+                      onClick={scrollToProjects}
+                      className="cursor-pointer mobile-link">
                       Projekty
                     </span>
                   </li>
                   <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
-                    <span onClick={scrollToSkills} className="cursor-pointer">
+                    <span
+                      onClick={scrollToSkills}
+                      className="cursor-pointer mobile-link">
                       Umiejętosci
                     </span>
                   </li>

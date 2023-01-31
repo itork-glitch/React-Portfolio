@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-#navbar {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.6px);
-  -webkit-backdrop-filter: blur(4.6px);
-}
-
 #darkmode {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3px);
@@ -18,8 +10,8 @@
 
 .glass {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.1px);
-  -webkit-backdrop-filter: blur(4.1px);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
 }
 
 #small-nav {
@@ -34,12 +26,6 @@
   #small-nav {
     display: block;
   }
-}
-
-#drop {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.6px);
-  -webkit-backdrop-filter: blur(4.6px);
 }
 
 .hero-h1 {

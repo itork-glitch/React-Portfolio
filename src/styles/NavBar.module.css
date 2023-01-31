@@ -9,3 +9,15 @@
 :global(#dark .switch) {
   color: white;
 }
+
+:global(#dark .mobile-link) {
+  color: #000;
+}
+
+:global(#dark .MenuButton) {
+  color: #fff;
+}
+
+:global(#dark .arrow) {
+  color: #fff;
+}
