@@ -25,7 +25,15 @@ function App() {
             className=" mb-[15px] text-2xl"
             inverse={theme === "dark"}
           />
-          <Switch onChange={toogleTheme} checked={theme === "dark"} />
+          <Switch
+            onChange={toogleTheme}
+            checked={theme === "dark"}
+            onColor="#3e77c7"
+            offHandleColor="#696969"
+            onHandleColor="#369aff"
+            uncheckedIcon={false}
+            checkedIcon={false}
+          />
         </div>
       </div>
       <Projects id={theme} />
