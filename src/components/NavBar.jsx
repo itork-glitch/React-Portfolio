@@ -40,24 +40,6 @@ export const NavBar = () => {
     });
   };
 
-  const [scroll, setScroll] = useState(0);
-  const [color, setColor] = useState("black");
-
-  useEffect(() => {
-    function handleScroll() {
-      setScroll(window.pageYOffset);
-      if (scroll > 980) {
-        setColor("white");
-      } else {
-        setColor("black");
-      }
-    }
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scroll]);
-
   return (
     <div className={styles.navBar} ref={dropdownRef} id="navbar">
       <div className="text-center inline-flex sm:flex">
