@@ -60,8 +60,7 @@ export const NavBar = () => {
             <span
               onClick={scrollToHome}
               className="cursor-pointer"
-              id="nav-link"
-              style={{ color }}>
+              id="nav-link">
               Strona Główna
             </span>
           </li>
