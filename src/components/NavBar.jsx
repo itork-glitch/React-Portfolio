@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/styles";
+import "../styles/NavBar.module.css";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,6 +40,24 @@ export const NavBar = () => {
     });
   };
 
+  const [scroll, setScroll] = useState(0);
+  const [color, setColor] = useState("black");
+
+  useEffect(() => {
+    function handleScroll() {
+      setScroll(window.pageYOffset);
+      if (scroll > 980) {
+        setColor("white");
+      } else {
+        setColor("black");
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scroll]);
+
   return (
     <div className={styles.navBar} ref={dropdownRef} id="navbar">
       <div className="text-center inline-flex sm:flex">
@@ -56,17 +75,27 @@ export const NavBar = () => {
       <div className="" id="main-nav">
         <ul className=" inline-flex gap-[45px]">
           <li className="transition duration-300 ease-out hover:text-cyan-600">
-            <span onClick={scrollToHome} className="cursor-pointer">
+            <span
+              onClick={scrollToHome}
+              className="cursor-pointer"
+              id="nav-link"
+              style={{ color }}>
               Strona Główna
             </span>
           </li>
           <li className="mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
-            <span onClick={scrollToProjects} className="cursor-pointer">
+            <span
+              onClick={scrollToProjects}
+              className="cursor-pointer"
+              id="nav-link">
               Projekty
             </span>
           </li>
           <li className="transition duration-300 ease-out hover:text-cyan-600">
-            <span onClick={scrollToSkills} className="cursor-pointer">
+            <span
+              onClick={scrollToSkills}
+              className="cursor-pointer"
+              id="nav-link">
               Umiejętości
             </span>
           </li>

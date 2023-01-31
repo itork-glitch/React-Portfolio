@@ -63,3 +63,7 @@
   left: 0;
   width: 100%;
 }
+
+:global(#dark > #nav-link) {
+  color: whitesmoke;
+}
