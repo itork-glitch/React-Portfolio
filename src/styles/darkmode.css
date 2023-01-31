@@ -1,3 +1,7 @@
 #dark .darktext {
   color: white !important;
 }
+
+#dark {
+  background-image: url("../assets/darkmode.jpg");
+}

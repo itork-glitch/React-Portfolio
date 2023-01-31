@@ -1,4 +1,11 @@
 :global(#dark #nav-link) {
-  color: cadetblue !important;
-  text-shadow: 3px 3px 11px rgba(195, 195, 195, 1);
+  color: #fff;
+}
+
+:global(#dark #logo) {
+  color: #fff;
+}
+
+:global(#dark .switch) {
+  color: white;
 }

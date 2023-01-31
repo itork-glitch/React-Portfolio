@@ -45,9 +45,11 @@ export const NavBar = () => {
       <div className="text-center inline-flex sm:flex">
         <div className="sm:block md:inline-block lg:inline-block">
           <span onClick={scrollToHome} className="cursor-pointer">
-            <span className="md:font-semibold font-medium">Itork</span>
+            <span className="md:font-semibold font-medium" id="logo">
+              Itork
+            </span>
             <br className=" block sm:hidden" />
-            <span className="md:font-normal font-light ml-[4px]">
+            <span className="md:font-normal font-light ml-[4px]" id="logo">
               Portfolio
             </span>
           </span>
@@ -125,7 +127,7 @@ export const NavBar = () => {
             <a href="https://www.instagram.com/_itork_/" target="_blank">
               <FontAwesomeIcon
                 icon="fa-brands fa-instagram"
-                className=" text-[15px] sm:text-[30px]"
+                className=" text-[15px] sm:text-[30px] switch"
               />
             </a>
           </li>
@@ -133,7 +135,7 @@ export const NavBar = () => {
             <a href="https://github.com/itork-glitch" target="_blank">
               <FontAwesomeIcon
                 icon="fa-brands fa-github"
-                className=" text-[15px] sm:text-[30px]"
+                className=" text-[15px] sm:text-[30px] switch"
               />
             </a>
           </li>
@@ -141,7 +143,7 @@ export const NavBar = () => {
             <a href="https://discord.gg/4nqtVmu4NP" target="_blank">
               <FontAwesomeIcon
                 icon="fa-brands fa-discord"
-                className=" text-[15px] sm:text-[30px]"
+                className=" text-[15px] sm:text-[30px] switch"
               />
             </a>
           </li>
