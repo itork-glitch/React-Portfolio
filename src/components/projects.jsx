@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const Projects = ({ id }) => {
   return (
     <div
-      className={`xs:h-[200vh] sm:200vh md:h-[150vh] lg:h-screen bg-slate-300 projects ${id} py-[45px]`}
+      className={`xs:h-[200vh] sm:200vh md:h-[150vh] lg:h-screen bg-slate-200 projects ${id} py-[45px]`}
     >
       <div className="grid xs:grid-cols-1 xs:grid-rows-3 sm:grid-cols-1 sm:grid-rows-3 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 gap-10 xs:mx-1 sm:mx-2 md:mx-3">
         <div className="card1 flex justify-center items-center my-3">
