@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "../styles/styles";
-import "../styles/NavBar.module.css";
+import React, { useState, useEffect, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styles from '../styles/styles';
+import '../styles/NavBar.module.css';
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,30 +13,30 @@ export const NavBar = () => {
         setIsOpen(false);
       }
     }
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [dropdownRef]);
 
   const scrollToProjects = () => {
     window.scrollTo({
       top: window.innerHeight,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   const scrollToHome = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   const scrollToSkills = () => {
     window.scrollTo({
-      top: 2160,
-      behavior: "smooth",
+      top: 2886,
+      behavior: 'smooth',
     });
   };
 
@@ -62,7 +62,8 @@ export const NavBar = () => {
             <span
               onClick={scrollToHome}
               className="cursor-pointer"
-              id="nav-link">
+              id="nav-link"
+            >
               Strona Główna
             </span>
           </li>
@@ -70,7 +71,8 @@ export const NavBar = () => {
             <span
               onClick={scrollToProjects}
               className="cursor-pointer"
-              id="nav-link">
+              id="nav-link"
+            >
               Projekty
             </span>
           </li>
@@ -78,7 +80,8 @@ export const NavBar = () => {
             <span
               onClick={scrollToSkills}
               className="cursor-pointer"
-              id="nav-link">
+              id="nav-link"
+            >
               Umiejętości
             </span>
           </li>
@@ -97,26 +100,29 @@ export const NavBar = () => {
             </div>
 
             {isOpen && (
-              <div className={styles.dropdown} id="drop">
+              <div className={styles.dropdown} id="drop darkmode">
                 <ul className="divide-y-[1.5px] divide-black">
                   <li className=" my-[4px] ease-in-out duration-300 hover:text-cyan-600">
                     <span
                       onClick={scrollToHome}
-                      className="cursor-pointer mobile-link">
+                      className="cursor-pointer mobile-link"
+                    >
                       Strona Główna
                     </span>
                   </li>
                   <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
                     <span
                       onClick={scrollToProjects}
-                      className="cursor-pointer mobile-link">
+                      className="cursor-pointer mobile-link"
+                    >
                       Projekty
                     </span>
                   </li>
                   <li className=" mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
                     <span
                       onClick={scrollToSkills}
-                      className="cursor-pointer mobile-link">
+                      className="cursor-pointer mobile-link"
+                    >
                       Umiejętosci
                     </span>
                   </li>

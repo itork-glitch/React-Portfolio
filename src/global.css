@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+#navbar {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(4.6px);
+}
+
 #darkmode {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3px);
@@ -29,7 +35,7 @@
 }
 
 .hero-h1 {
-  background-image: url("./assets/pexels-felix-mittermeier-956999.jpg");
+  background-image: url('./assets/pexels-felix-mittermeier-956999.jpg');
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
