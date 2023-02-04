@@ -3,7 +3,7 @@ import React from 'react';
 export const Commands = () => {
   return (
     <div>
-      <h1>c</h1>
+      <h1>d</h1>
     </div>
   );
 };
