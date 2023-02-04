@@ -3,7 +3,7 @@ import './App.css';
 import { NavBar } from './components';
 import { FireBot } from './pages/FireBot';
 import { Commands } from './pages/commands';
-import { Home } from './pages/Home';
+import { Home } from './pages/home';
 import './styles/darkmode.css';
 import { Routes, Route } from 'react-router-dom';
 
