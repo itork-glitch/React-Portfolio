@@ -57,3 +57,12 @@
 :global(#dark > #nav-link) {
   color: whitesmoke;
 }
+
+:global(#dark > #nav-span) {
+  color: #fff !important;
+}
+
+.darkspan {
+  color: #fff;
+  cursor: pointer;
+}

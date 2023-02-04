@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '../styles/styles';
 import '../styles/NavBar.module.css';
 
-export const NavBar = () => {
+export const NavBar = ({ theme }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -45,11 +45,21 @@ export const NavBar = () => {
       <div className="text-center inline-flex sm:flex">
         <div className="sm:block md:inline-block lg:inline-block">
           <span onClick={scrollToHome} className="cursor-pointer">
-            <span className="md:font-semibold font-medium" id="logo">
+            <span
+              className={`md:font-semibold font-medium ${
+                theme === 'dark' ? 'darkspan' : ''
+              }`}
+              id="logo"
+            >
               Itork
             </span>
             <br className=" block sm:hidden" />
-            <span className="md:font-normal font-light ml-[4px]" id="logo">
+            <span
+              className={`md:font-normal font-light ml-[4px] ${
+                theme === 'dark' ? 'darkspan' : ''
+              }`}
+              id="logo"
+            >
               Portfolio
             </span>
           </span>
@@ -61,8 +71,7 @@ export const NavBar = () => {
           <li className="transition duration-300 ease-out hover:text-cyan-600">
             <span
               onClick={scrollToHome}
-              className="cursor-pointer"
-              id="nav-link"
+              className={`${theme === 'dark' ? 'darkspan' : ''}`}
             >
               Strona Główna
             </span>
@@ -70,8 +79,7 @@ export const NavBar = () => {
           <li className="mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
             <span
               onClick={scrollToProjects}
-              className="cursor-pointer"
-              id="nav-link"
+              className={`${theme === 'dark' ? 'darkspan' : ''}`}
             >
               Projekty
             </span>
@@ -79,8 +87,7 @@ export const NavBar = () => {
           <li className="transition duration-300 ease-out hover:text-cyan-600">
             <span
               onClick={scrollToSkills}
-              className="cursor-pointer"
-              id="nav-link"
+              className={`${theme === 'dark' ? 'darkspan' : ''}`}
             >
               Umiejętości
             </span>
@@ -92,10 +99,15 @@ export const NavBar = () => {
         <li className=" list-none" onClick={() => setIsOpen(!isOpen)}>
           <div className="Menu ">
             <div className="transition duration-300 ease-out hover:text-cyan-600">
-              <button className="MenuButton ">Menu</button>
+              <button
+                className={`MenuButton ${theme === 'dark' ? 'darkspan' : ''}`}
+              >
+                Menu
+              </button>
               <FontAwesomeIcon
                 icon="fa-solid fa-angle-down"
                 className=" ml-[7px] arrow "
+                inverse={theme === 'dark'}
               />
             </div>
 
@@ -140,6 +152,7 @@ export const NavBar = () => {
               <FontAwesomeIcon
                 icon="fa-brands fa-instagram"
                 className=" text-[15px] sm:text-[30px] switch"
+                inverse={theme === 'dark'}
               />
             </a>
           </li>
@@ -148,6 +161,7 @@ export const NavBar = () => {
               <FontAwesomeIcon
                 icon="fa-brands fa-github"
                 className=" text-[15px] sm:text-[30px] switch"
+                inverse={theme === 'dark'}
               />
             </a>
           </li>
@@ -156,6 +170,7 @@ export const NavBar = () => {
               <FontAwesomeIcon
                 icon="fa-brands fa-discord"
                 className=" text-[15px] sm:text-[30px] switch"
+                inverse={theme === 'dark'}
               />
             </a>
           </li>

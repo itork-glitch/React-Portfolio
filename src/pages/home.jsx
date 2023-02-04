@@ -1,13 +1,10 @@
-import '../App.css';
+import React, { createContext, useState } from 'react';
 import { NavBar, Projects, Skills } from '../components';
-import { Commands } from './commands';
-import { FireBot } from './FireBot';
-import '../styles/darkmode.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Route, Routes } from 'react-router-dom';
 import Switch from 'react-switch';
 import styles from '../styles/styles';
-import React, { createContext, useState } from 'react';
+import '../App.css';
+import '../styles/darkmode.css';
 
 export const Home = () => {
   const themeContext = createContext(null);
@@ -18,6 +15,7 @@ export const Home = () => {
   };
   return (
     <themeContext.Provider value={{ theme, toogleTheme }}>
+      <NavBar theme={theme} />
       <div className=" background h-screen bg-cover bg-fixed" id={theme}>
         <div className={styles.darkSwitch} id="darkmode">
           <span className=" darktext font-semibold">Dark mode</span>
