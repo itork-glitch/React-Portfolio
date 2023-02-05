@@ -34,12 +34,16 @@ export const Projects = ({ theme }) => {
                 komend każdej kategori. <br /> Dowiedz się więcej klikając w
                 link.
               </p>
-              <button className="mb-[30px] p-4 rounded-xl text-white bg-black w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
-                <Link to="/commands">Sprawdź moje komendy</Link>
-              </button>
-              <button className="p-4 rounded-xl text-white bg-black w-[80%] md:w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
-                <Link to="/fire">Dowiedz się więcej</Link>
-              </button>
+              <Link to="/commands" className="flex justify-center px-5">
+                <button className="mb-[30px] p-4 rounded-xl text-white bg-black w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
+                  Sprawdź moje komendy
+                </button>
+              </Link>
+              <Link to="/fire" className="flex justify-center px-5">
+                <button className="p-4 rounded-xl text-white bg-black w-[80%] md:w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
+                  Dowiedz się więcej
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -68,18 +72,23 @@ export const Projects = ({ theme }) => {
                 uruchamiania strony opartej na react.js na localhost <br />
                 aby dowiedzieć się więcej klikij w link.
               </p>
-              <button className="mb-[30px] p-4 rounded-xl text-white bg-black w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
-                <a href="https://github.com/itork-glitch/React-Luncher">
+              <a
+                href="https://github.com/itork-glitch/React-Luncher"
+                className="flex justify-center px-5"
+              >
+                <button className="mb-[30px] p-4 rounded-xl text-white bg-black w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
                   <FontAwesomeIcon
                     icon="fa-brands fa-github"
                     className="mr-[7px] text-2xl"
                   />
                   Pobierz z GitHub
-                </a>
-              </button>
-              <button className="p-4 rounded-xl text-white bg-black w-[80%] md:w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
-                <Link to="/luncher">Dowiedz się więcej</Link>
-              </button>
+                </button>
+              </a>
+              <Link to="/luncher" className="flex justify-center px-5">
+                <button className="p-4 rounded-xl text-white bg-black w-[80%] md:w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
+                  Dowiedz się więcej
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -108,12 +117,16 @@ export const Projects = ({ theme }) => {
                 komend każdej kategori. <br /> Dowiedz się więcej klikając w
                 link.
               </p>
-              <button className="mb-[30px] p-4 rounded-xl text-white bg-black w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
-                <Link to="/commands">Sprawdź moje komendy</Link>
-              </button>
-              <button className="p-4 rounded-xl text-white bg-black w-[80%] md:w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
-                <Link to="/fire">Dowiedz się więcej</Link>
-              </button>
+              <Link to="/commands" className="flex justify-center px-5">
+                <button className="mb-[30px] p-4 rounded-xl text-white bg-black w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
+                  Sprawdź moje komendy
+                </button>
+              </Link>
+              <Link to="/fire" className="flex justify-center px-5">
+                <button className="p-4 rounded-xl text-white bg-black w-[80%] md:w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
+                  Dowiedz się więcej
+                </button>
+              </Link>
             </div>
           </div>
         </div>
