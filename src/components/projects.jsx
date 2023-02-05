@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export const Projects = ({ theme }) => {
   return (
     <div
-      className={`xs:h-[200vh] sm:200vh md:h-[150vh] lg:h-screen projects ${theme} py-[45px] text-center px-5 text-md mb-[45px] ${
+      className={`xs:h-[200vh] sm:200vh md:h-[150vh] lg:h-screen projects ${theme} py-[45px] text-center text-md mb-[45px] ${
         theme === 'dark' ? 'bg-dark' : 'bg-light'
       }`}
     >
@@ -141,6 +141,7 @@ export const Projects = ({ theme }) => {
           </div>
         </div>
       </div>
+      <div className="bg-code h-[45vh] w-[100%] bg-[url('/bg-code.png')] bg-center bg-cover bg-fixed mt-[45px]"></div>
     </div>
   );
 };
