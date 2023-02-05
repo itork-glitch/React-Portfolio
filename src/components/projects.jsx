@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/projects.css';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Projects = ({ theme }) => {
   return (
@@ -54,24 +55,30 @@ export const Projects = ({ theme }) => {
                   theme === 'dark' ? '' : 'title'
                 }`}
               >
-                Fire Bot
+                React Luncher
               </h1>
             </div>
             <div className="description flex flex-col justify-center">
               <p
-                className={`text-center px-5 text-md mb-[45px] ${
+                className={`text-center px-5 text-[15px] mb-[45px] ${
                   theme === 'dark' ? 'darkp' : ''
                 } `}
               >
-                Fire Bot to bot do discorda o szerokim zastosowaniu posiada dużo
-                komend każdej kategori. <br /> Dowiedz się więcej klikając w
-                link.
+                React Luncher to program który stworzyłem służy on do
+                uruchamiania strony opartej na react.js na localhost <br />
+                aby dowiedzieć się więcej klikij w link.
               </p>
               <button className="mb-[30px] p-4 rounded-xl text-white bg-black w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
-                <Link to="/commands">Sprawdź moje komendy</Link>
+                <a href="https://github.com/itork-glitch/React-Luncher">
+                  <FontAwesomeIcon
+                    icon="fa-brands fa-github"
+                    className="mr-[7px] text-2xl"
+                  />
+                  Pobierz z GitHub
+                </a>
               </button>
               <button className="p-4 rounded-xl text-white bg-black w-[80%] md:w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
-                <Link to="/fire">Dowiedz się więcej</Link>
+                <Link to="/luncher">Dowiedz się więcej</Link>
               </button>
             </div>
           </div>

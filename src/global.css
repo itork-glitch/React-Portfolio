@@ -67,6 +67,10 @@
   cursor: pointer;
 }
 
+.lightspan {
+  cursor: pointer;
+}
+
 .darkp {
   color: #fff;
 }

@@ -71,7 +71,7 @@ export const NavBar = ({ theme }) => {
           <li className="transition duration-300 ease-out hover:text-cyan-600">
             <span
               onClick={scrollToHome}
-              className={`${theme === 'dark' ? 'darkspan' : ''}`}
+              className={`${theme === 'dark' ? 'darkspan' : 'lightspan'}`}
             >
               Strona Główna
             </span>
@@ -79,7 +79,7 @@ export const NavBar = ({ theme }) => {
           <li className="mb-[4px] ease-in-out duration-300 hover:text-cyan-600">
             <span
               onClick={scrollToProjects}
-              className={`${theme === 'dark' ? 'darkspan' : ''}`}
+              className={`${theme === 'dark' ? 'darkspan' : 'lightspan'}`}
             >
               Projekty
             </span>
@@ -87,7 +87,7 @@ export const NavBar = ({ theme }) => {
           <li className="transition duration-300 ease-out hover:text-cyan-600">
             <span
               onClick={scrollToSkills}
-              className={`${theme === 'dark' ? 'darkspan' : ''}`}
+              className={`${theme === 'dark' ? 'darkspan' : 'lightspan'}`}
             >
               Umiejętości
             </span>
