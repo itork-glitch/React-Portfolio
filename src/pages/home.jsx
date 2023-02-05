@@ -35,7 +35,7 @@ export const Home = () => {
           />
         </div>
       </div>
-      <Projects id={theme} />
+      <Projects theme={theme} />
       <Skills />
     </themeContext.Provider>
   );

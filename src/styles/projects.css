@@ -20,12 +20,20 @@
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
+.darkcard {
+  border-radius: 50px;
+  background: #474747;
+  -webkit-box-shadow: 8px 8px 24px 0px rgb(48, 48, 48);
+  -moz-box-shadow: 8px 8px 24px 0px rgb(48, 48, 48);
+  box-shadow: 8px 8px 24px 0px rgb(48, 48, 48);
+}
+
 .title {
   text-shadow: 4px 4px 15px rgba(123, 127, 148, 1);
 }
 
 .btn-shadow {
-  -webkit-box-shadow: 8px 8px 20px 1px rgba(66, 68, 90, 1);
-  -moz-box-shadow: 8px 8px 20px 1px rgba(66, 68, 90, 1);
-  box-shadow: 8px 8px 20px 1px rgba(66, 68, 90, 1);
+  -webkit-box-shadow: 8px 8px 20px 1px rgba(63, 63, 63, 1);
+  -moz-box-shadow: 8px 8px 20px 1px rgba(63, 63, 93, 1);
+  box-shadow: 8px 8px 20px 1px rgb(63, 63, 63);
 }
