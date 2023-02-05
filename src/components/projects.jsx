@@ -57,7 +57,7 @@ export const Projects = ({ theme }) => {
               <h1
                 className={`${theme === 'dark' ? 'darkp' : ''} ${
                   theme === 'dark' ? '' : 'title'
-                }`}
+                } text-[40px] xs:text-[40px] sm:text-[55px] md:text-[42px]`}
               >
                 React Luncher
               </h1>
@@ -69,8 +69,8 @@ export const Projects = ({ theme }) => {
                 } `}
               >
                 React Luncher to program który stworzyłem służy on do
-                uruchamiania strony opartej na react.js na localhost <br />
-                aby dowiedzieć się więcej klikij w link.
+                uruchamiania strony opartej na react.js na localhost. <br />
+                Aby dowiedzieć się więcej klikij w link.
               </p>
               <a
                 href="https://github.com/itork-glitch/React-Luncher"
@@ -102,9 +102,9 @@ export const Projects = ({ theme }) => {
               <h1
                 className={`${theme === 'dark' ? 'darkp' : ''} ${
                   theme === 'dark' ? '' : 'title'
-                }`}
+                } text-[40px] xs:text-[40px] sm:text-[55px] md:text-[38px]`}
               >
-                Fire Bot
+                Pasek ARGB
               </h1>
             </div>
             <div className="description flex flex-col justify-center">
@@ -113,15 +113,23 @@ export const Projects = ({ theme }) => {
                   theme === 'dark' ? 'darkp' : ''
                 }`}
               >
-                Fire Bot to bot do discorda o szerokim zastosowaniu posiada dużo
-                komend każdej kategori. <br /> Dowiedz się więcej klikając w
-                link.
+                Pasek ARGB to system oświetlenia oparty na programowalnej płyce
+                która zarządza paskiem kod programów jest dostępny pod linkiem
+                <br />
+                Aby dowiedzieć się więcej klikij w link.
               </p>
-              <Link to="/commands" className="flex justify-center px-5">
+              <a
+                href="https://github.com/itork-glitch?tab=repositories&q=&type=&language=c%2B%2B&sort="
+                className="flex justify-center px-5"
+              >
                 <button className="mb-[30px] p-4 rounded-xl text-white bg-black w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
-                  Sprawdź moje komendy
+                  <FontAwesomeIcon
+                    icon="fa-brands fa-github"
+                    className="mr-[7px] text-2xl"
+                  />
+                  Pobierz z GitHub
                 </button>
-              </Link>
+              </a>
               <Link to="/fire" className="flex justify-center px-5">
                 <button className="p-4 rounded-xl text-white bg-black w-[80%] md:w-[60%] self-center hover:scale-110 lg:hover:w-[70%] transition-all duration-300 ease-out btn-shadow">
                   Dowiedz się więcej
