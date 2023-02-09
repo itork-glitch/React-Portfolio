@@ -77,11 +77,11 @@
 
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: whitesmoke;
+  background-color: #cbd5e1;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: whitesmoke;
+  background-color: #cbd5e1;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -91,4 +91,8 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(97, 97, 97);
+}
+
+.skils-grid {
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
