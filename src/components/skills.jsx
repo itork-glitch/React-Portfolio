@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export const Skills = () => {
   return (
     <div className="lg:h-screen xs:h-[120vh] bg-slate-300  p-5 flex justify-around items-center">
-      <div className="lg:w-[30%] lg:block xs:hidden">
+      <div className="lg:w-[30%] lg:block xs:hidden hidden">
         <img src="/skils-photo.jpg" alt="skills" className="object-contain" />
       </div>
       <div className="grid grid-cols-1 grid-rows-4 gap-12 lg:grid-cols-2 lg:grid-rows-2 place-items-center">
