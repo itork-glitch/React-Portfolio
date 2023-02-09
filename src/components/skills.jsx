@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Skills = () => {
   return (
-    <div className="lg:h-screen xs:h-[120vh] bg-slate-300  p-5 flex justify-around items-center">
+    <div className="lg:h-screen xs:h-[120vh] bg-slate-300  p-5 flex justify-around items-center pt-[55px]">
       <div className="lg:w-[30%] lg:block xs:hidden hidden">
         <img src="/skils-photo.jpg" alt="skills" className="object-contain" />
       </div>
