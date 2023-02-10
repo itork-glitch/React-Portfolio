@@ -1,0 +1,44 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.layer {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  animation: spin 1s ease-in-out infinite, rise 1s ease-in-out infinite;
+  transform-origin: center bottom;
+  margin: 8px;
+}
+
+.layer:nth-child(1) {
+  background-color: #fd8420;
+  animation-delay: 0s;
+}
+
+.layer:nth-child(2) {
+  background-color: #e14e2b;
+  animation-delay: 0.2s;
+}
+
+.layer:nth-child(3) {
+  background-color: #cd114e;
+  animation-delay: 0.4s;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+  }
+  12.5% {
+    transform: translateY(-30px);
+    background-color: #e0b92b;
+  }
+  25% {
+    transform: translateY(0);
+  }
+}
