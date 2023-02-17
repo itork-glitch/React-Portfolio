@@ -1,9 +1,18 @@
 .bg-dark {
-  background: #0f2027;
+  background: #242424;
 }
 
 .bg-light {
   background: rgb(226 232 240);
+}
+
+.title-main {
+  text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+  color: rgb(34, 35, 40);
+}
+
+.title-main-dark {
+  text-shadow: 4px 4px 15px rgba(123, 127, 148, 1);
 }
 
 .card {
@@ -14,10 +23,10 @@
 
 .darkcard {
   border-radius: 50px;
-  background: #474747;
+  background: #333333;
   -webkit-box-shadow: 8px 8px 24px 0px rgb(48, 48, 48);
   -moz-box-shadow: 8px 8px 24px 0px rgb(48, 48, 48);
-  box-shadow: 8px 8px 24px 0px rgb(48, 48, 48);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .title {

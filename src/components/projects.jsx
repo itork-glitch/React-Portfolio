@@ -7,9 +7,16 @@ export const Projects = ({ theme }) => {
   return (
     <div
       className={`xs:h-[200vh] sm:200vh md:h-[150vh] lg:h-screen projects ${theme} pt-[45px] text-center text-md ${
-        theme === 'dark' ? 'bg-dark' : 'bg-light'
+        theme === 'dark' ? 'bg-dark' : 'bg-slate-300'
       }`}
     >
+      <div
+        className={`${
+          theme === 'dark' ? 'title-main-dark darkp' : 'title-main'
+        } pt-2 pb-[64px] px-3 text-[65px] font-bold`}
+      >
+        Moje Projekty:
+      </div>
       <div className="grid xs:grid-cols-1 xs:grid-rows-3 sm:grid-cols-1 sm:grid-rows-3 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 gap-10 xs:mx-1 sm:mx-2 md:mx-3">
         <div className="card1 flex justify-center items-center my-3">
           <div
